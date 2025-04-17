@@ -3,10 +3,10 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/api/hello')
 def hello_world():
-    """Returns Hello, World."""
-    return 'Hello, World!'
+    """Returns Hello, EDP!"""
+    return 'Hello, EDP!'
 
 
 if __name__ == '__main__':
