@@ -9,4 +9,5 @@ def test_hello():
     response = app.test_client().get('/api/hello')
 
     assert response.status_code == 200
-    assert response.data == f'Hello, KubeRocketCI from ${os.getenv("HOSTNAME")}!'.encode()
+    message = f'Hello, KubeRocketCI from ${os.getenv("HOSTNAME")}!'
+    assert response.data == message.encode()
