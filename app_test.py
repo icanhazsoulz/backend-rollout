@@ -1,6 +1,6 @@
 """Unit test for application."""
-from app import app
 import os
+from app import app
 
 
 def test_hello():

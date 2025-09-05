@@ -1,6 +1,6 @@
 """Example of flask main file."""
-from flask import Flask
 import os
+from flask import Flask
 app = Flask(__name__)
 
 
