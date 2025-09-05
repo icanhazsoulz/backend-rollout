@@ -1,12 +1,13 @@
 """Example of flask main file."""
 from flask import Flask
+import os
 app = Flask(__name__)
 
 
 @app.route('/api/hello')
 def hello_world():
-    """Returns Hello, EDP!"""
-    return 'Hello, EDP!'
+    """Returns Hello, KubeRocketCI!"""
+    return 'Hello, KubeRocketCI from ${os.getenv("HOSTNAME")}!'
 
 
 if __name__ == '__main__':
