@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/api/hello')
 def hello_world():
     """Returns Hello, KubeRocketCI!"""
-    return 'Hello, KubeRocketCI from ${os.getenv("HOSTNAME")}!'
+    return f'Hello, KubeRocketCI from ${os.getenv("HOSTNAME")}!'
 
 
 if __name__ == '__main__':
